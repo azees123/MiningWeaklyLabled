@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <servlet-class>MWL.FileUploadServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>searchImageServlet</servlet-name>
+        <servlet-class>MWL.searchImageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FileSearchServlet</servlet-name>
+        <servlet-class>MWL.FileSearchServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetImageServlet</servlet-name>
+        <servlet-class>MWL.GetImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <url-pattern>/FileUploadServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>searchImageServlet</servlet-name>
+        <url-pattern>/searchImageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FileSearchServlet</servlet-name>
+        <url-pattern>/FileSearchServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetImageServlet</servlet-name>
+        <url-pattern>/GetImageServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
